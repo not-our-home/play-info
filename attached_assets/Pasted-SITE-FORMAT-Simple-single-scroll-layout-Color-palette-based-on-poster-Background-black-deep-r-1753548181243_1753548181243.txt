@@ -1,0 +1,89 @@
+SITE FORMAT
+
+Simple single-scroll layout
+
+Color palette based on poster:
+
+Background: black / deep red-orange/ maroon. 
+
+Text: white or light beige. Or black for when you can’t really see the text. I trust your judgement. 
+
+Accent colors: red, beige, orange. 
+
+Fonts: clean system fonts only (Arial, Helvetica)
+
+SECTION 1: TITLE + POSTER (Top of Page)
+
+Full poster image at top
+
+Clear title & show info below:
+
+NOT OUR HOME, NOT OUR HOME 
+         A new play by Ned Du
+
+Preview performance: August 9, 7:30 PM @ The Flea Theater
+(Presented by Rogue Theater Festival 2025)
+
+Main performance week: September 22–28 @ The Theater for the New City
+(Full schedule & ticket info coming soon)
+
+SECTION 2: DONATE
+
+Very visible section directly under show info
+
+Short blurb + big button:
+
+Help Us Build the September Show and Beyond. 
+Your donation supports artists and production costs. Thank you! 
+
+[DONATE NOW] ← button linking to external platform 
+
+SECTION 3: ABOUT THE PLAY
+
+Insert play synopsis (in the google drive!) 
+
+In this surreal drama-comedy, two Taiwanese-American brothers return to Taipei for Chinese New Year, carrying baggage both literal and emotional—including the ashes of a childhood cat. Set against political tension and ancestral ritual, Not Our Home, Not Our Home explores the costs of immigration, the ache of cultural dissonance, and the ghosts we carry across generations. Laced with dark humor, horror elements, and underscored by a lush original score, this play blurs the line between memory and myth, asking: What do we owe the places we leave behind—and the people we become?
+
+
+
+SECTION 4: CAST & CREW
+
+Grid format for uniformity (or whatever is the easiest for you.) 
+
+For each member:
+
+Name
+
+Role (e.g. "Actor – YOUNGEST")
+
+Short Bio 
+
+Image box:
+
+Headshot (if available)
+
+Cat photo (if not; for privacy)
+
+All images same size for consistency
+
+I know a some of them don't have a headshot and bio right now, but if you could kindly just put a blank photo or for the bio just say (Coming Soon) that would be awesome. They will get in everything very very soon. Most of the photos are there except of Qingan. 
+
+SECTION 5: GALLERY
+
+Grid or horizontal scrolling image section
+
+Use behind-the-scenes photos. IF you look at the rehearsal photos folder in the drive, you can see that I starred a few. Pick whatever you want and put them on the website. 
+
+Please also include the nice professional photos in the google drive under Professional Photos. Please credit Meggie Hool for these!  (If possible)
+
+
+
+SECTION 6: PLAYWRIGHT’S NOTE
+
+Short message from Ned (provided in the google drive with the synopsis) 
+
+
+
+SECTION 7: CONTACT / FOOTER
+
+Contact is rexlee22786@gmail.com 
