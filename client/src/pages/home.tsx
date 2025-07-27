@@ -211,12 +211,12 @@ export default function Home() {
       </section>
 
       {/* Section 2: Donate */}
-      <section id="donate" className="min-h-screen theater-beige py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center text-center">
+      <section id="donate" className="theater-beige py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-8">DONATE</h2>
           
-          <div className="max-w-2xl mx-auto mb-12">
-            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+          <div className="max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-gray-700 leading-relaxed mb-6">
               Help Us Build the September Show and Beyond.
             </p>
             <p className="text-lg text-gray-700 mb-8">
@@ -224,23 +224,21 @@ export default function Home() {
             </p>
           </div>
           
-          <div>
-            <Button 
-              onClick={() => window.open('#', '_blank')}
-              className="bg-red-600 text-white px-12 py-4 rounded-lg text-xl font-bold hover:bg-red-700 transition-colors shadow-lg"
-            >
-              DONATE NOW
-            </Button>
-          </div>
+          <Button 
+            onClick={() => window.open('#', '_blank')}
+            className="bg-red-600 text-white px-12 py-4 rounded-lg text-xl font-bold hover:bg-red-700 transition-colors shadow-lg"
+          >
+            DONATE NOW
+          </Button>
         </div>
       </section>
 
       {/* Section 3: About the Play */}
-      <section id="about" className="min-h-screen bg-white py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
+      <section id="about" className="bg-white py-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-8">ABOUT THE PLAY</h2>
           
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+          <div className="prose prose-lg max-w-none text-gray-700">
             <p className="text-lg leading-relaxed">
               In this surreal drama-comedy, two Taiwanese-American brothers return to Taipei for Chinese New Year, carrying baggage both literal and emotional—including the ashes of a childhood cat. Set against political tension and ancestral ritual, Not Our Home, Not Our Home explores the costs of immigration, the ache of cultural dissonance, and the ghosts we carry across generations. Laced with dark humor, horror elements, and underscored by a lush original score, this play blurs the line between memory and myth, asking: What do we owe the places we leave behind—and the people we become?
             </p>
@@ -406,39 +404,16 @@ export default function Home() {
                     Qingan Zhang (She/Her) is a New York and Boston based scenic designer. Her work explores metaphorical narratives through bodily performance, physical materiality, and integrated spatial experience. Selected design credits include Galileo's Daughter (WAM Theatre), Nüwa in Fairyland (CHUANG Stage), The Chinese Lady (Central Square Theater), Wolf Play (Brandeis University). Associate credits include Franklin's Key (Pig Iron), Cymbeline (NAATCO), SUR (LA MAMA). Qingan's co-devising puppetry pieces have been showcased at New Ohio Theatre Ice Factory, Rattlestick Theater GFTF, and HERE Arts Center. Qingan is the co-founder of the non-profit interdisciplinary production company Cellunova Productions.
                   </TruncatedBio>
                 </div>
+              </div>
+            </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <HeadshotImage name="Emily Her" alt="Emily Her photo" />
-                  </div>
-                  <h4 className="text-white font-bold text-lg mb-1">Emily Her</h4>
-                  <p className="text-white/80 text-sm mb-3">POSTER DESIGNER</p>
-                  <TruncatedBio>
-                    Bio coming soon
-                  </TruncatedBio>
-                </div>
-
-                <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <HeadshotImage name="Meggie Hool" alt="Meggie Hool photo" />
-                  </div>
-                  <h4 className="text-white font-bold text-lg mb-1">Meggie Hool</h4>
-                  <p className="text-white/80 text-sm mb-3">PHOTOGRAPHER</p>
-                  <TruncatedBio>
-                    Bio coming soon
-                  </TruncatedBio>
-                </div>
-
-                <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <HeadshotImage name="Nikhil Haksar" alt="Nikhil Haksar photo" />
-                  </div>
-                  <h4 className="text-white font-bold text-lg mb-1">Nikhil Haksar</h4>
-                  <p className="text-white/80 text-sm mb-3">STAND-IN</p>
-                  <TruncatedBio>
-                    Bio coming soon
-                  </TruncatedBio>
-                </div>
+            {/* Special Thanks Section */}
+            <div className="text-center mt-16">
+              <h3 className="text-2xl font-bold text-white mb-8">Special thanks to</h3>
+              <div className="max-w-2xl mx-auto text-white/80 space-y-2">
+                <p className="text-lg">Emily Her - POSTER DESIGNER</p>
+                <p className="text-lg">Meggie Hool - PHOTOGRAPHER</p>
+                <p className="text-lg">Nikhil Haksar - STAND-IN</p>
               </div>
             </div>
           </div>
