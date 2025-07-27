@@ -141,41 +141,43 @@ export default function Home() {
     <div className="min-h-screen">
       {/* Navigation Header */}
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-lg z-50 border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-bold italic" style={{ color: 'var(--theater-red)' }}>
+        <div className="max-w-6xl mx-auto px-2 sm:px-4 lg:px-8">
+          <div className="flex justify-between items-center h-20 sm:h-16">
+            <div className="text-sm sm:text-xl font-bold italic leading-tight" style={{ color: 'var(--theater-red)' }}>
               NOT OUR HOME, NOT OUR HOME
             </div>
             <div className="flex space-x-1 sm:space-x-4">
               <button 
                 onClick={() => scrollToSection('donate')}
-                className="px-2 sm:px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
               >
                 Donate
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="px-2 sm:px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('cast')}
-                className="px-2 sm:px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
               >
-                Cast & Crew
+                <span className="hidden sm:inline">Cast & Crew</span>
+                <span className="sm:hidden">Cast</span>
               </button>
               <button 
                 onClick={() => scrollToSection('gallery')}
-                className="px-2 sm:px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
               >
                 Gallery
               </button>
               <button 
                 onClick={() => scrollToSection('playwright')}
-                className="px-2 sm:px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
               >
-                Playwright's Note
+                <span className="hidden sm:inline">Playwright's Note</span>
+                <span className="sm:hidden">Note</span>
               </button>
             </div>
           </div>
@@ -185,7 +187,7 @@ export default function Home() {
       {/* Section 1: Home/Hero */}
       <section id="home" className="section-height theater-red flex flex-col">
         {/* Poster at very top */}
-        <div className="flex-shrink-0 pt-20 pb-4 flex justify-center">
+        <div className="flex-shrink-0 pt-24 sm:pt-20 pb-4 flex justify-center">
           <img 
             src={posterImageSrc} 
             alt="Not Our Home, Not Our Home - Theater Poster"
