@@ -111,7 +111,7 @@ export default function Home() {
                 onClick={() => scrollToSection('playwright')}
                 className="px-2 sm:px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
               >
-                Playwright
+                Playwright's Note
               </button>
             </div>
           </div>
@@ -388,10 +388,31 @@ export default function Home() {
           
           <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
             <div className="bg-white/50 p-8 rounded-lg">
-              <p className="text-lg leading-relaxed italic text-center">
-                "This play emerged from my own experience navigating identity between cultures, and the realization that 'home' isn't always a place you can return to—sometimes it's something you have to create. Through the journey of these two brothers, I hope audiences will reflect on their own relationships with belonging, memory, and the stories we tell ourselves about who we are."
-              </p>
-              <p className="text-right mt-6 font-semibold">— Ned Du</p>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">A Message from the Writer:</h3>
+              <div className="text-base leading-relaxed space-y-4">
+                <p>
+                  This play began with a dream: red faces, an uncle full of moutai, and the slow burn of guilt—shapeless and persistent. It bloomed into Not Our Home, Not Our Home, a song of many notes: of immigration and memory, of brothers and borders, of languages spoken and unspoken.
+                </p>
+                <p>
+                  Guilt is the drumbeat here. How do we carry it? How do we name it? What if it's not even ours, but still, it rests in our chest like a second heartbeat? I'm not interested in asking whether we belong or not. Better writers than me have asked if we belong. I care more about what happens after we answer that question. The part of ourselves that goes quiet. The kind of guilt that follows us, whether we say yes or no. The cost, and how it lingers. But guilt doesn't just haunt—it twists us, pushes us, sometimes into doing the dumbest, funniest things.
+                </p>
+                <p>
+                  We showed one small scene in December 2024 at the Immigrants in America Festival in Court Square Theater. To our joy, we won! In April 2025, we read the play aloud at the Dramatist Guild Foundation. Now, we plan to preview it at the Rogue Theater Festival, and soon, at the Theater for the New City. Each step has been a soft miracle. I intend to carry this story Off-Broadway, into bigger rooms. There's a bigger play in this. I'm not sure what it is yet, but I trust my actors and my crew to walk with me toward it.
+                </p>
+                <p>
+                  Thank you to my cast and crew. You hauled props and yourselves across town, and kept showing up in the dog days of summer—tired, sweating, cracking jokes, still managing to inspire me.
+                </p>
+                <p>
+                  And to the audience—thanks for coming. I hope something in here sticks with you for a while. Or at the very least, makes you laugh, then feel weird about it.
+                </p>
+                <p>
+                  If you'd like to help us keep building bigger shows and better sets, please consider donating.
+                </p>
+                <p className="font-semibold">
+                  Thank you!<br/>
+                  Ned Du
+                </p>
+              </div>
             </div>
           </div>
         </div>
