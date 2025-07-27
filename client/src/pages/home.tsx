@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
+  // Get the base path from Vite's configuration
+  const basePath = import.meta.env.BASE_URL;
+  const posterImageSrc = basePath + 'POSTER_1753552322790.jpg';
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -52,7 +56,7 @@ export default function Home() {
         {/* Poster at very top */}
         <div className="flex-shrink-0 pt-20 pb-4 flex justify-center">
           <img 
-            src="/POSTER_1753552322790.jpg" 
+            src={posterImageSrc} 
             alt="Not Our Home, Not Our Home - Theater Poster"
             className="h-96 object-contain rounded-lg shadow-2xl"
           />
