@@ -143,8 +143,8 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-lg z-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="text-xl font-bold" style={{ color: 'var(--theater-red)' }}>
-              NOT OUR HOME
+            <div className="text-xl font-bold italic" style={{ color: 'var(--theater-red)' }}>
+              NOT OUR HOME, NOT OUR HOME
             </div>
             <div className="flex space-x-1 sm:space-x-4">
               <button 
@@ -195,9 +195,9 @@ export default function Home() {
 
         {/* Main content - centered */}
         <div className="flex-1 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8 py-8">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            NOT OUR HOME,<br/>NOT OUR HOME
-          </h1>
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight italic">
+                NOT OUR HOME, NOT OUR HOME
+              </h1>
           <p className="text-lg sm:text-xl text-white/90 mb-4 font-medium">A new play by Ned Du</p>
           
           <div className="text-white/80 mb-8 max-w-2xl space-y-3">
@@ -241,7 +241,7 @@ export default function Home() {
           
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="text-lg leading-relaxed">
-              In this surreal drama-comedy, two Taiwanese-American brothers return to Taipei for Chinese New Year, carrying baggage both literal and emotional—including the ashes of a childhood cat. Set against political tension and ancestral ritual, Not Our Home, Not Our Home explores the costs of immigration, the ache of cultural dissonance, and the ghosts we carry across generations. Laced with dark humor, horror elements, and underscored by a lush original score, this play blurs the line between memory and myth, asking: What do we owe the places we leave behind—and the people we become?
+              In this surreal drama-comedy, two Taiwanese-American brothers return to Taipei for Chinese New Year, carrying baggage both literal and emotional—including the ashes of a childhood cat. Set against political tension and ancestral ritual, <em>Not Our Home, Not Our Home</em> explores the costs of immigration, the ache of cultural dissonance, and the ghosts we carry across generations. Laced with dark humor, horror elements, and underscored by a lush original score, this play blurs the line between memory and myth, asking: What do we owe the places we leave behind—and the people we become?
             </p>
           </div>
         </div>
@@ -505,7 +505,7 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4 text-gray-900">A Message from the Writer:</h3>
               <div className="text-base leading-relaxed space-y-4">
                 <p>
-                  This play began with a dream: red faces, an uncle full of moutai, and the slow burn of guilt—shapeless and persistent. It bloomed into Not Our Home, Not Our Home, a song of many notes: of immigration and memory, of brothers and borders, of languages spoken and unspoken.
+                  This play began with a dream: red faces, an uncle full of moutai, and the slow burn of guilt—shapeless and persistent. It bloomed into <em>Not Our Home, Not Our Home</em>, a song of many notes: of immigration and memory, of brothers and borders, of languages spoken and unspoken.
                 </p>
                 <p>
                   Guilt is the drumbeat here. How do we carry it? How do we name it? What if it's not even ours, but still, it rests in our chest like a second heartbeat? I'm not interested in asking whether we belong or not. Better writers than me have asked if we belong. I care more about what happens after we answer that question. The part of ourselves that goes quiet. The kind of guilt that follows us, whether we say yes or no. The cost, and how it lingers. But guilt doesn't just haunt—it twists us, pushes us, sometimes into doing the dumbest, funniest things.
@@ -539,7 +539,7 @@ export default function Home() {
             <p className="text-lg">Contact: <a href="mailto:rexlee22786@gmail.com" className="text-white underline hover:text-white/80 transition-colors">rexlee22786@gmail.com</a></p>
             <div className="pt-4 border-t border-white/20">
               <p className="text-white/60 text-sm">
-                © 2025 NOT OUR HOME, NOT OUR HOME • A play by Ned Du
+                © 2025 <em>NOT OUR HOME, NOT OUR HOME</em> • A play by Ned Du
               </p>
             </div>
           </div>

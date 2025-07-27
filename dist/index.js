@@ -29,13 +29,20 @@ var vite_config_default = defineConfig({
       await import("@replit/vite-plugin-cartographer").then(
         (m) => m.cartographer()
       )
-    ] : []
+    ] : [],
+    // Plugin to copy multiple asset directories
+    {
+      name: "copy-assets",
+      generateBundle() {
+      }
+    }
   ],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
       "@shared": path.resolve(import.meta.dirname, "shared"),
-      "@assets": path.resolve(import.meta.dirname, "attached_assets")
+      "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+      "@headshots": path.resolve(import.meta.dirname, "headshots")
     }
   },
   root: path.resolve(import.meta.dirname, "client"),
