@@ -103,6 +103,7 @@ export default function Home() {
       'Daphne Lin': 'Daphne Lin.jpg',
       'Yung-Hung Sung': 'Yung-Hung Sung.jpg',
       'Mamie Limbrick': 'Mamie Limbrick.jpg',
+      'Qingan Zhang': 'QinganZhang.jpg',
     };
     
     return headshotMap[name] ? basePath + headshotMap[name] : null;
