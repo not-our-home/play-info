@@ -31,6 +31,47 @@ export default function Home() {
   const basePath = import.meta.env.BASE_URL;
   const posterImageSrc = basePath + 'POSTER_1753552322790.jpg';
 
+  // Function to get headshot path for each person
+  const getHeadshotPath = (name: string): string | null => {
+    const headshotMap: { [key: string]: string } = {
+      'Josh Lau': 'Josh Lau.jpg',
+      'Ding Lee': 'Ding J_s Headshot.jpg',
+      'John Jiang': 'John Jiang.jpg',
+      'Dominic Wong': 'Dominic Wong - Headshot 20250512.jpg',
+      'Lei Chow': 'Lei Chow.jpg',
+      'Tien-Li Wu': 'Tien-Li Wu.jpg',
+      'Boyu Chen': 'Boyu Chen.jpg',
+      'Ned Du': 'Ned Du.webp',
+      'Sissi Chen': 'Sissi Chen.jpg',
+      'Daphne Lin': 'Daphne Lin.jpg',
+      'Yung-Hung Sung': 'Yung-Hung Sung.jpg',
+      'Mamie Limbrick': 'Mamie Limbrick.jpg',
+    };
+    
+    return headshotMap[name] ? basePath + headshotMap[name] : null;
+  };
+
+  // Component to render headshot or placeholder
+  const HeadshotImage = ({ name, alt }: { name: string; alt: string }) => {
+    const headshotPath = getHeadshotPath(name);
+    
+    if (headshotPath) {
+      return (
+        <img 
+          src={headshotPath}
+          alt={alt}
+          className="w-full h-full object-cover"
+        />
+      );
+    } else {
+      return (
+        <div className="w-full h-full bg-white/20 flex items-center justify-center">
+          <span className="text-gray-500 text-xs">Photo</span>
+        </div>
+      );
+    }
+  };
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -155,8 +196,8 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-white text-center mb-8">CAST</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Headshot</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <HeadshotImage name="Josh Lau" alt="Josh Lau headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Josh Lau</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – YOUNGEST</p>
@@ -166,8 +207,8 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Headshot</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <HeadshotImage name="Ding Lee" alt="Ding Lee headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Ding Lee</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – MIDDLE</p>
@@ -177,8 +218,8 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Headshot</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <HeadshotImage name="John Jiang" alt="John Jiang headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">John Jiang</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – ELDEST</p>
@@ -188,8 +229,8 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Headshot</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <HeadshotImage name="Dominic Wong" alt="Dominic Wong headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Dominic Wong</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – UNCLE</p>
@@ -199,8 +240,8 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Headshot</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <HeadshotImage name="Lei Chow" alt="Lei Chow headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Lei Chow</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – FATHER</p>
@@ -210,8 +251,12 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Headshot</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <img 
+                      src={getHeadshotPath('Tien-Li Wu')}
+                      alt="Tien-Li Wu headshot"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Tien-Li Wu</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – GRANDMOTHER</p>
@@ -221,8 +266,12 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Headshot</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <img 
+                      src={getHeadshotPath('Boyu Chen')}
+                      alt="Boyu Chen headshot"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Boyu Chen</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – COUSIN / MASKED MAN / FLIGHT ATTENDANT / PASSPORT OFFICER / RADIO</p>
@@ -238,8 +287,12 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-white text-center mb-8">CREW</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Photo</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <img 
+                      src={getHeadshotPath('Ned Du')}
+                      alt="Ned Du photo"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Ned Du</h4>
                   <p className="text-white/80 text-sm mb-3">WRITER and PRODUCER</p>
@@ -249,8 +302,12 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Photo</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <img 
+                      src={getHeadshotPath('Sissi Chen')}
+                      alt="Sissi Chen photo"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Sissi Chen</h4>
                   <p className="text-white/80 text-sm mb-3">DIRECTOR</p>
@@ -260,8 +317,12 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Photo</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <img 
+                      src={getHeadshotPath('Daphne Lin')}
+                      alt="Daphne Lin photo"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Daphne Lin</h4>
                   <p className="text-white/80 text-sm mb-3">STAGE MANAGER</p>
@@ -271,8 +332,12 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Photo</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <img 
+                      src={getHeadshotPath('Yung-Hung Sung')}
+                      alt="Yung-Hung Sung photo"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Yung-Hung Sung</h4>
                   <p className="text-white/80 text-sm mb-3">LIGHTING DESIGNER</p>
@@ -282,8 +347,12 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Photo</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <img 
+                      src={getHeadshotPath('Mamie Limbrick')}
+                      alt="Mamie Limbrick photo"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Mamie Limbrick</h4>
                   <p className="text-white/80 text-sm mb-3">COMPOSER and SOUND DESIGNER</p>
@@ -293,8 +362,12 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
-                  <div className="cast-placeholder aspect-square rounded-lg mb-4 mx-auto max-w-32 flex items-center justify-center">
-                    <span className="text-gray-500 text-xs">Photo</span>
+                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <img 
+                      src={getHeadshotPath('Qingan Zhang')}
+                      alt="Qingan Zhang photo"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Qingan Zhang</h4>
                   <p className="text-white/80 text-sm mb-3">SCENIC DESIGNER</p>

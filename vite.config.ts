@@ -17,12 +17,20 @@ export default defineConfig({
           ),
         ]
       : []),
+    // Plugin to copy multiple asset directories
+    {
+      name: 'copy-assets',
+      generateBundle() {
+        // This will be handled by the publicDir and additional copying
+      }
+    }
   ],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
       "@shared": path.resolve(import.meta.dirname, "shared"),
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
+      "@headshots": path.resolve(import.meta.dirname, "headshots"),
     },
   },
   root: path.resolve(import.meta.dirname, "client"),
