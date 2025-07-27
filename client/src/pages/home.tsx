@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Component to handle truncated bios with expand/collapse functionality
 function TruncatedBio({ children }: { children: string }) {
@@ -30,6 +31,62 @@ export default function Home() {
   // Get the base path from Vite's configuration
   const basePath = import.meta.env.BASE_URL;
   const posterImageSrc = basePath + 'POSTER_1753552322790.jpg';
+
+  // Gallery state
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  // List of all rehearsal photos
+  const galleryImages = [
+    'IMG_3362.jpg',
+    'fxn 2025-07-21 150441.244.jpg',
+    'fxn 2025-07-21 150528.947.jpg',
+    'fxn 2025-07-21 133702.815.jpg',
+    'fxn 2025-07-21 133559.825.jpg',
+    'fxn 2025-07-21 133853.229.jpg',
+    'fxn 2025-07-21 133215.030.jpg',
+    'fxn 2025-07-21 134138.264.jpg',
+    'fxn 2025-07-05 195505.142.jpg',
+    'fxn 2025-07-05 195445.262.jpg',
+    'fxn 2025-07-18 165713.890.jpg',
+    'fxn 2025-07-18 165945.824.jpg',
+    'fxn 2025-07-09 142044.190.jpg',
+    'fxn 2025-07-13 164236.529.jpg',
+    'fxn 2025-07-15 144019.316.jpg',
+    'fxn 2025-07-09 142105.895.jpg',
+    'fxn 2025-07-13 163108.077.jpg',
+    'fxn 2025-07-11 190934.422.jpg',
+    'fxn 2025-07-11 190531.293.jpg',
+    'fxn 2025-07-09 142132.851.jpg',
+    'fxn 2025-07-14 151754.693.jpg',
+    'fxn 2025-07-11 185920.791.jpg',
+    'fxn 2025-07-12 175424.524.jpg',
+    'fxn 2025-07-15 162332.126.jpg',
+    'fxn 2025-07-11 201935.628.jpg',
+    'fxn 2025-07-12 175402.185.jpg',
+    'fxn 2025-07-09 142736.632.jpg',
+    'fxn 2025-07-09 142755.819.jpg',
+    'fxn 2025-07-09 142157.687.jpg',
+    'fxn 2025-07-11 202528.864.jpg',
+    'fxn 2025-07-11 190237.387.jpg',
+    'fxn 2025-07-11 190347.694.jpg',
+    'fxn 2025-07-11 190549.081.jpg',
+    'meggiehoolphoto-redthreads-01.jpg',
+    'meggiehoolphoto-redthreads-05.jpg',
+    'meggiehoolphoto-redthreads-10.jpg',
+    'meggiehoolphoto-redthreads-143.jpg',
+    'meggiehoolphoto-redthreads-20.jpg',
+    'meggiehoolphoto-redthreads-45.jpg',
+    'meggiehoolphoto-redthreads-59.jpg',
+    'meggiehoolphoto-redthreads-79.jpg'
+  ];
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % galleryImages.length);
+  };
+
+  const previousImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+  };
 
   // Function to get headshot path for each person
   const getHeadshotPath = (name: string): string | null => {
@@ -106,6 +163,12 @@ export default function Home() {
                 className="px-2 sm:px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
               >
                 Cast & Crew
+              </button>
+              <button 
+                onClick={() => scrollToSection('gallery')}
+                className="px-2 sm:px-4 py-2 text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+              >
+                Gallery
               </button>
               <button 
                 onClick={() => scrollToSection('playwright')}
@@ -252,11 +315,7 @@ export default function Home() {
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <img 
-                      src={getHeadshotPath('Tien-Li Wu')}
-                      alt="Tien-Li Wu headshot"
-                      className="w-full h-full object-cover"
-                    />
+                    <HeadshotImage name="Tien-Li Wu" alt="Tien-Li Wu headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Tien-Li Wu</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – GRANDMOTHER</p>
@@ -267,11 +326,7 @@ export default function Home() {
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <img 
-                      src={getHeadshotPath('Boyu Chen')}
-                      alt="Boyu Chen headshot"
-                      className="w-full h-full object-cover"
-                    />
+                    <HeadshotImage name="Boyu Chen" alt="Boyu Chen headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Boyu Chen</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – COUSIN / MASKED MAN / FLIGHT ATTENDANT / PASSPORT OFFICER / RADIO</p>
@@ -288,11 +343,7 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="text-center bg-white/10 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <img 
-                      src={getHeadshotPath('Ned Du')}
-                      alt="Ned Du photo"
-                      className="w-full h-full object-cover"
-                    />
+                    <HeadshotImage name="Ned Du" alt="Ned Du photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Ned Du</h4>
                   <p className="text-white/80 text-sm mb-3">WRITER and PRODUCER</p>
@@ -303,11 +354,7 @@ export default function Home() {
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <img 
-                      src={getHeadshotPath('Sissi Chen')}
-                      alt="Sissi Chen photo"
-                      className="w-full h-full object-cover"
-                    />
+                    <HeadshotImage name="Sissi Chen" alt="Sissi Chen photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Sissi Chen</h4>
                   <p className="text-white/80 text-sm mb-3">DIRECTOR</p>
@@ -318,11 +365,7 @@ export default function Home() {
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <img 
-                      src={getHeadshotPath('Daphne Lin')}
-                      alt="Daphne Lin photo"
-                      className="w-full h-full object-cover"
-                    />
+                    <HeadshotImage name="Daphne Lin" alt="Daphne Lin photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Daphne Lin</h4>
                   <p className="text-white/80 text-sm mb-3">STAGE MANAGER</p>
@@ -333,11 +376,7 @@ export default function Home() {
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <img 
-                      src={getHeadshotPath('Yung-Hung Sung')}
-                      alt="Yung-Hung Sung photo"
-                      className="w-full h-full object-cover"
-                    />
+                    <HeadshotImage name="Yung-Hung Sung" alt="Yung-Hung Sung photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Yung-Hung Sung</h4>
                   <p className="text-white/80 text-sm mb-3">LIGHTING DESIGNER</p>
@@ -348,11 +387,7 @@ export default function Home() {
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <img 
-                      src={getHeadshotPath('Mamie Limbrick')}
-                      alt="Mamie Limbrick photo"
-                      className="w-full h-full object-cover"
-                    />
+                    <HeadshotImage name="Mamie Limbrick" alt="Mamie Limbrick photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Mamie Limbrick</h4>
                   <p className="text-white/80 text-sm mb-3">COMPOSER and SOUND DESIGNER</p>
@@ -363,11 +398,7 @@ export default function Home() {
 
                 <div className="text-center bg-white/10 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <img 
-                      src={getHeadshotPath('Qingan Zhang')}
-                      alt="Qingan Zhang photo"
-                      className="w-full h-full object-cover"
-                    />
+                    <HeadshotImage name="Qingan Zhang" alt="Qingan Zhang photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Qingan Zhang</h4>
                   <p className="text-white/80 text-sm mb-3">SCENIC DESIGNER</p>
@@ -381,7 +412,74 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 5: Playwright's Note */}
+      {/* Section 5: Gallery */}
+      <section id="gallery" className="section-height bg-black py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">GALLERY</h2>
+          
+          <div className="flex-1 flex flex-col justify-center">
+            <div className="relative max-w-4xl mx-auto">
+              {/* Main Image */}
+              <div className="relative aspect-[4/3] bg-gray-900 rounded-lg overflow-hidden shadow-2xl">
+                <img
+                  src={basePath + galleryImages[currentImageIndex]}
+                  alt={`Rehearsal photo ${currentImageIndex + 1}`}
+                  className="w-full h-full object-cover"
+                />
+                
+                {/* Navigation Arrows */}
+                <button
+                  onClick={previousImage}
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-colors"
+                  aria-label="Previous image"
+                >
+                  <ChevronLeft size={24} />
+                </button>
+                
+                <button
+                  onClick={nextImage}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-colors"
+                  aria-label="Next image"
+                >
+                  <ChevronRight size={24} />
+                </button>
+              </div>
+              
+              {/* Image Counter */}
+              <div className="text-center mt-6">
+                <p className="text-white/70 text-sm">
+                  {currentImageIndex + 1} of {galleryImages.length}
+                </p>
+              </div>
+              
+              {/* Thumbnail Navigation */}
+              <div className="mt-8 flex justify-center">
+                <div className="flex space-x-2 overflow-x-auto max-w-full pb-2">
+                  {galleryImages.map((image, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentImageIndex(index)}
+                      className={`flex-shrink-0 w-16 h-12 rounded overflow-hidden border-2 transition-all ${
+                        index === currentImageIndex 
+                          ? 'border-red-500 opacity-100' 
+                          : 'border-gray-600 opacity-60 hover:opacity-80'
+                      }`}
+                    >
+                      <img
+                        src={basePath + image}
+                        alt={`Thumbnail ${index + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6: Playwright's Note */}
       <section id="playwright" className="section-height theater-beige py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-8">PLAYWRIGHT'S NOTE</h2>
