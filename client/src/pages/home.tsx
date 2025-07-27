@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import posterImage from "@assets/POSTER_1753552322790.jpg";
 
 export default function Home() {
   const scrollToSection = (sectionId: string) => {
@@ -53,7 +52,7 @@ export default function Home() {
         {/* Poster at very top */}
         <div className="flex-shrink-0 pt-20 pb-4 flex justify-center">
           <img 
-            src={posterImage} 
+            src="/POSTER_1753552322790.jpg" 
             alt="Not Our Home, Not Our Home - Theater Poster"
             className="h-96 object-contain rounded-lg shadow-2xl"
           />
