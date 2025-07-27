@@ -135,7 +135,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">Josh Lau</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – YOUNGEST</p>
                   <p className="text-white/70 text-xs leading-relaxed">
-                    Bio coming soon
+                    Josh, an Astoria based actor, is all the enthusiastic adjectives to be playing Youngest in this production of Not Our Home, Not Our Home! Last time he did the short version of this play, he told everyone to see Maybe Happy Ending--but since ticket prices have skyrocketed, he recommends at least the cast album. Love and thanks to Mom and Dad!
                   </p>
                 </div>
 
@@ -146,7 +146,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">Ding Lee</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – MIDDLE</p>
                   <p className="text-white/70 text-xs leading-relaxed">
-                    Bio coming soon
+                    Ding has recently moved back to America from London, where he trained at the National Youth Theatre of Great Britain and starred in Off-West End productions, festival films, and commercials for the UK and US market. He made his playwriting debut at the Barons Court Theatre in London.
                   </p>
                 </div>
 
@@ -157,7 +157,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">John Jiang</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – ELDEST</p>
                   <p className="text-white/70 text-xs leading-relaxed">
-                    Bio coming soon
+                    John Jiang is from Xinjiang China, and he came to the US at age of 15 to attend Cheshire Academy where he found his passion in acting, since then he acquired his BA in theater from Union College, and he recently graduated as a company member from American Academy of Dramatic Art. In the past decade, he has taken on a wide variety of roles on stage, such as Mary/Bingly from Pride And Prejudices, Lord Illingworth from A Woman of No Important and G. from Polaroid Stories, etc. He is extremely grateful and excited for this opportunity to bring this story to life at the Rogue Theater Festival. He would like to thank everyone who has helped him along his journey, especially his family who unfortunately cannot make it to the show.
                   </p>
                 </div>
 
@@ -179,7 +179,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">Lei Chow</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – FATHER</p>
                   <p className="text-white/70 text-xs leading-relaxed">
-                    Bio coming soon
+                    Lei Chow holds BFA in acting of Brooklyn College and also the certificate of one year study of directing. He has been studying at HB Studio and finished the full 3 years program of Acting and Musical Singing performing art taught by Hellen Gallagher. He has been studying from Prof. Austin Pendleton at HB Studio for over 15 years and had been performing in the productions Austin directed. He won the Award of Outstanding Performance at 2015 Lower East Side Festival of the Arts for his performance of Dr. Naguchi, the top second forensic scientist in the US in 1970s, in Dr. Naguchi, directed by Crystal Field, the artistic director of Theater For The New City. During Covid-19, he played Mr. Lee in the award winning best short web series, Covid-Ditty episode 3, and it won the best Ensemble Acting award in the film festival in California. Lei Chow has done voice over work in bilinguals of Mandarin and English for TV commercials such as Tri-Honda 2014 & 2015, of Colgate, documentaries of video and audio programs, and the bilingual voice-over work for the award winning movie, "Saving Face". Lei Chow is also a film maker. In 2018, he directed an independent short movie called The Rekindling by the award winning playwright, Joe Davidson. It won the award for the best screen play. He did most of the cinematography for the film. He did the cinematography for Covid-Ditty episode 6, and it won the best film making award.
                   </p>
                 </div>
 
@@ -190,7 +190,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">Tien-Li Wu</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – GRANDMOTHER</p>
                   <p className="text-white/70 text-xs leading-relaxed">
-                    Bio coming soon
+                    After earning a dance degree from the National Taiwan University of Arts, Tien-Li Wu spent a decade in Taiwan's entertainment industry as a professional dancer and television host. She later moved to the United States, where she earned a degree in Film from the School of Visual Arts in New York. In recent years, she has continued to expand her creative journey by exploring the art of acting and broadening her artistic horizons.
                   </p>
                 </div>
 
@@ -218,7 +218,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">Ned Du</h4>
                   <p className="text-white/80 text-sm mb-3">WRITER and PRODUCER</p>
                   <p className="text-white/70 text-xs leading-relaxed">
-                    Bio coming soon
+                    Ned Du is an award-winning Taiwanese-American writer and theater maker hailing from the sunlit suburbs of Southern California. Growing up in a predominantly Taiwanese community, he has a keen understanding of both the joys and tensions within the immigrant experience. His work, rich in themes of belonging and inherited guilt, explores what it means to navigate identity in a world of shifting expectations. For Ned, theater is a transformative space—a way to distill complex ideas, cultural discourse, and emerging trends into stories that resonate on a human level. He's grateful for every chance to experiment and bring to life the ideas that have been quietly stirring within him for years.
                   </p>
                 </div>
 
@@ -229,7 +229,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">Sissi Chen</h4>
                   <p className="text-white/80 text-sm mb-3">DIRECTOR</p>
                   <p className="text-white/70 text-xs leading-relaxed">
-                    Bio coming soon
+                    Sissi Chen is a New York-based director, producer, and actor. As an adamant advocator for cross-cultural communication through theater, she has extensive experience in engaging English-Mandarin audiences. Recent theatre credits include Red Threads (2024), Don't Pitch It, Do It (2024), The President's Invitation (2024), Covenant (2023), Jonah (2023), I Need That (2023), Doubt (2024), Murder Up in the Air (2023), Once Upon a Story (2023).
                   </p>
                 </div>
 
@@ -251,7 +251,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">Yung-Hung Sung</h4>
                   <p className="text-white/80 text-sm mb-3">LIGHTING DESIGNER</p>
                   <p className="text-white/70 text-xs leading-relaxed">
-                    Bio coming soon
+                    Yung-Hung Sung, a lighting and scenic designer originally from Kaohsiung, Taiwan. Sung has collaborated with numerous theatre artists and companies. With over 90 productions, his design footprints have already been seen around several nations/festivals and major theaters in Taiwan, such as the National Theater of Taiwan, National Taichung Theater (Taiwan), and the National Kaohsiung Center for the Arts. Also, Edinburgh International Festival Fringe (UK), Proyector Festival (Spain), Beijing Dance Festival, Shanghai International Festival of Arts (China), Migration Matters Festival (UK), ChangMu Performing Arts Festival (Korea), Festival of Avignon Off (France), etc. Selected awards include Long River with WCdance, which was selected to be the annual winner of the 13th Taishin Arts Award. Panta Rhei, which was nominated for Emerging Lighting Design, World Stage Design Exhibition 2017 in Taipei, Taiwan. Ten Lines of Poetry to NK with Neo-Classic Chamber Ensemble, which received Bronze for Professional Lighting Design at the World Stage Design Exhibition 2022 in Calgary, Canada. He holds a Design MFA from Yale, the David Geffen School of Drama. He is also the recipient of the Jennifer Tipton Scholarship in Lighting, the Stanley McCandless Scholarship, the Donald and Zorka Oenslager Scholarship in Stage Design, the William and Sarah Hyman Scholarship, and the Government Scholarship to Study Abroad by the Ministry of Education, Taiwan. With the urgency to respond to the outbreaking global events and as a designer who sees all sectors in panorama, Sung finds the uniqueness and essence of live performance lie in its direct, multi-dimensional impact on the perceivers. He strives to use scenography as a medium to dissect the human condition, initiate inner dialogues, declare personal statements, and spark not only profound discussions but even reveal evasive conflicts. In line with the foregoing, he believes the emotional connection between the performers and the audience transcends the use of sophisticated words, intellectual concepts, and stunning visual effects. A thought-provoking performance can happen on a bare stage devoid of any design. "Scenography exists only when it helps tell a story better."
                   </p>
                 </div>
 
@@ -262,7 +262,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">Mamie Limbrick</h4>
                   <p className="text-white/80 text-sm mb-3">COMPOSER and SOUND DESIGNER</p>
                   <p className="text-white/70 text-xs leading-relaxed">
-                    Bio coming soon
+                    Mamie Limbrick is an opera singer, composer, and theatre producer from the UK. She has performed at prestigious venues around the UK, namely the Royal Festival Hall and Glyndebourne Opera House. She has produced Off-West End plays, and her compositions have featured in short films and live theatre. She is excited to be making her American compositional debut.
                   </p>
                 </div>
 
@@ -273,7 +273,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">Qingan Zhang</h4>
                   <p className="text-white/80 text-sm mb-3">SCENIC DESIGNER</p>
                   <p className="text-white/70 text-xs leading-relaxed">
-                    Bio coming soon
+                    Qingan Zhang (She/Her) is a New York and Boston based scenic designer. Her work explores metaphorical narratives through bodily performance, physical materiality, and integrated spatial experience. Selected design credits include Galileo's Daughter (WAM Theatre), Nüwa in Fairyland (CHUANG Stage), The Chinese Lady (Central Square Theater), Wolf Play (Brandeis University). Associate credits include Franklin's Key (Pig Iron), Cymbeline (NAATCO), SUR (LA MAMA). Qingan's co-devising puppetry pieces have been showcased at New Ohio Theatre Ice Factory, Rattlestick Theater GFTF, and HERE Arts Center. Qingan is the co-founder of the non-profit interdisciplinary production company Cellunova Productions.
                   </p>
                 </div>
               </div>
