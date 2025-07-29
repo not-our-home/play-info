@@ -235,24 +235,42 @@ export default function Home() {
             </p>
           </div>
           
-          <form action="https://www.paypal.com/donate" method="post" target="_top" className="inline-block">
+          <form id="paypal-form" action="https://www.paypal.com/donate" method="post" target="_top" className="inline-block">
             <input type="hidden" name="business" value="SZDKK426EJGCA" />
             <input type="hidden" name="no_recurring" value="0" />
             <input type="hidden" name="item_name" value="For our September show and beyond. The cast and crew of Not Our Home, Not Our Home thanks you! " />
             <input type="hidden" name="currency_code" value="USD" />
-            <input 
-              type="image" 
-              src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" 
-              name="submit" 
-              title="PayPal - The safer, easier way to pay online!" 
-              alt="Donate with PayPal button"
-              className="hover:opacity-80 transition-all duration-300 hover:scale-110"
-              style={{ 
-                border: 0, 
-                transform: 'scale(3.5)',
-                margin: '60px 0'
-              }}
-            />
+            
+            <button
+              type="submit"
+              className="group relative overflow-hidden bg-gradient-to-r from-red-600 via-red-700 to-red-800 hover:from-red-700 hover:via-red-800 hover:to-red-900 text-white font-bold py-6 px-12 rounded-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 border-2 border-red-500 hover:border-red-400"
+              title="Donate securely via PayPal"
+            >
+              {/* Shine effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              
+              {/* Button content */}
+              <div className="relative flex items-center justify-center space-x-3">
+                {/* Heart icon */}
+                <svg className="w-8 h-8 text-white group-hover:text-red-100 transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                
+                <div className="text-center">
+                  <div className="text-2xl font-bold tracking-wide">DONATE NOW</div>
+                  <div className="text-sm opacity-90 font-medium">Support the Arts • Secure PayPal</div>
+                </div>
+                
+                {/* Dollar icon */}
+                <svg className="w-8 h-8 text-white group-hover:text-red-100 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                </svg>
+              </div>
+              
+              {/* Pulse effect */}
+              <div className="absolute inset-0 rounded-2xl border-2 border-red-400 opacity-0 group-hover:opacity-100 group-hover:animate-pulse"></div>
+            </button>
+            
             <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" style={{ border: 0 }} />
           </form>
         </div>
