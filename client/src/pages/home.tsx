@@ -229,7 +229,7 @@ export default function Home() {
                 
                 <div className="text-center">
                   <div className="text-2xl font-bold tracking-wide">DONATE NOW</div>
-                  <div className="text-sm opacity-90 font-medium">Support the Arts • Secure PayPal</div>
+                  <div className="text-sm opacity-90 font-medium">Support the Arts</div>
                 </div>
                 
                 {/* Dollar icon */}
