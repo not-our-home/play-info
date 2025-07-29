@@ -191,7 +191,7 @@ export default function Home() {
           <img 
             src={posterImageSrc} 
             alt="Not Our Home, Not Our Home - Theater Poster"
-            className="h-96 object-contain rounded-lg shadow-2xl"
+            className="w-[600px] h-[850px] object-contain rounded-lg shadow-2xl max-w-full max-h-full"
           />
         </div>
 
@@ -205,6 +205,14 @@ export default function Home() {
           <div className="text-white/80 mb-8 max-w-2xl space-y-3">
             <p className="text-base sm:text-lg"><strong>Preview performance:</strong> August 9, 7:30 PM @ The Flea Theater</p>
             <p className="text-sm sm:text-base">(Presented by Rogue Theater Festival 2025)</p>
+            <p className="text-sm sm:text-base">
+              <a href="https://www.tickettailor.com/events/roguetheaterfestival/1733301" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 className="text-white underline hover:text-white/80 transition-colors">
+                Get tickets here
+              </a>
+            </p>
             <p className="text-base sm:text-lg"><strong>Main performance week:</strong> September 22–28 @ The Theater for the New City</p>
             <p className="text-sm sm:text-base">(Full schedule & ticket info coming soon)</p>
           </div>
@@ -485,13 +493,6 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              
-              {/* Photo Credit */}
-              <div className="text-center mt-8">
-                <p className="text-white/60 text-base">
-                  Professional photos taken by Meggie Hool
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -502,15 +503,18 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-8">PLAYWRIGHT'S NOTE</h2>
           
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+          <div className="prose prose-lg max-w-none text-gray-700 space-y-6 text-center">
             <div className="bg-white/50 p-8 rounded-lg">
               <h3 className="text-xl font-bold mb-4 text-gray-900">A Message from the Writer:</h3>
               <div className="text-base leading-relaxed space-y-4">
                 <p>
-                  This play began with a dream: red faces, an uncle full of moutai, and the slow burn of guilt—shapeless and persistent. It bloomed into <em>Not Our Home, Not Our Home</em>, a song of many notes: of immigration and memory, of brothers and borders, of languages spoken and unspoken.
+                  This play began with a dream: laughing red faces, a belly sloshing with Moutai, and—most stubbornly—the slow, annoying burn of guilt. From that strange dream bloomed <em>Not Our Home, Not Our Home</em>, a song of many notes: of immigration and memory, of brothers and borders, of languages spoken and unspoken.
                 </p>
                 <p>
-                  Guilt is the drumbeat here. How do we carry it? How do we name it? What if it's not even ours, but still, it rests in our chest like a second heartbeat? I'm not interested in asking whether we belong or not. Better writers than me have asked if we belong. I care more about what happens after we answer that question. The part of ourselves that goes quiet. The kind of guilt that follows us, whether we say yes or no. The cost, and how it lingers. But guilt doesn't just haunt—it twists us, pushes us, sometimes into doing the dumbest, funniest things.
+                  At first, I thought I was going to be writing about belonging. But that question—do we belong?—has been asked by better writers than me and has never been a question I was interested in. What lingered wasn't the asking, but what comes after the answer. When we say yes, or no, or something in between—what do we lose in the choosing? What parts of ourselves get buried? What parts are invented?
+                </p>
+                <p>
+                  That's where guilt creeps in. When belonging becomes a choice, guilt rushes in to fill the cracks. Guilt is the beating heart of this story. How do we carry it? How do we name it? What if it's not even ours, but something passed down—quietly, relentlessly? And guilt doesn't just haunt—it twists us, reshapes us, pushes us into doing the dumbest, most laughably human things. Guilt is powerful, yes. But it can also be deeply stupid and absurd.
                 </p>
                 <p>
                   We showed one small scene in December 2024 at the Immigrants in America Festival in Court Square Theater. To our joy, we won! In April 2025, we read the play aloud at the Dramatist Guild Foundation. Now, we plan to preview it at the Rogue Theater Festival, and soon, at the Theater for the New City. Each step has been a soft miracle. I intend to carry this story Off-Broadway, into bigger rooms. There's a bigger play in this. I'm not sure what it is yet, but I trust my actors and my crew to walk with me toward it.
@@ -519,10 +523,7 @@ export default function Home() {
                   Thank you to my cast and crew. You hauled props and yourselves across town, and kept showing up in the dog days of summer—tired, sweating, cracking jokes, still managing to inspire me.
                 </p>
                 <p>
-                  And to the audience—thanks for coming. I hope something in here sticks with you for a while. Or at the very least, makes you laugh, then feel weird about it.
-                </p>
-                <p>
-                  If you'd like to help us keep building bigger shows and better sets, please consider donating.
+                  If you'd like to help us keep building bigger shows, please consider donating. I hope you come, laugh, and then feel weird about laughing. That's how we know it's working.
                 </p>
                 <p className="font-semibold">
                   Thank you!<br/>
