@@ -24,10 +24,12 @@
   --ring: hsl(0, 0%, 20%);
   --radius: 0.5rem;
   
-  /* Theater-specific colors */
-  --theater-red: hsl(0, 84%, 60%);
-  --theater-gray: hsl(220, 13%, 26%);
-  --theater-beige: hsl(48, 94%, 90%);
+  /* Theater-specific colors - Darker theme */
+  --theater-red: hsl(0, 70%, 35%);
+  --theater-dark-red: hsl(0, 50%, 25%);
+  --theater-gray: hsl(220, 20%, 15%);
+  --theater-beige: hsl(45, 15%, 25%);
+  --theater-black: hsl(0, 0%, 8%);
 }
 
 .dark {

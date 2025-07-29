@@ -140,7 +140,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Navigation Header */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-lg z-50 border-b border-gray-200">
+      <nav className="fixed top-0 left-0 right-0 bg-black/95 backdrop-blur-sm shadow-2xl z-50 border-b border-red-900/50">
         <div className="max-w-6xl mx-auto px-2 sm:px-4 lg:px-8">
           <div className="flex justify-between items-center h-20 sm:h-16">
             <div className="text-sm sm:text-xl font-bold italic leading-tight" style={{ color: 'var(--theater-red)' }}>
@@ -149,32 +149,32 @@ export default function Home() {
             <div className="flex space-x-1 sm:space-x-4">
               <button 
                 onClick={() => scrollToSection('donate')}
-                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-white hover:text-red-400 transition-colors"
               >
                 Donate
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-white hover:text-red-400 transition-colors"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('cast')}
-                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-white hover:text-red-400 transition-colors"
               >
                 <span className="hidden sm:inline">Cast & Crew</span>
                 <span className="sm:hidden">Cast</span>
               </button>
               <button 
                 onClick={() => scrollToSection('gallery')}
-                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-white hover:text-red-400 transition-colors"
               >
                 Gallery
               </button>
               <button 
                 onClick={() => scrollToSection('playwright')}
-                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 hover:text-red-600 transition-colors"
+                className="px-1 sm:px-4 py-2 text-xs sm:text-sm font-medium text-white hover:text-red-400 transition-colors"
               >
                 <span className="hidden sm:inline">Playwright's Note</span>
                 <span className="sm:hidden">Note</span>
@@ -224,13 +224,13 @@ export default function Home() {
       {/* Section 2: Donate */}
       <section id="donate" className="theater-beige py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-8">DONATE</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-white mb-8">DONATE</h2>
           
           <div className="max-w-2xl mx-auto mb-8">
-            <p className="text-xl text-gray-700 leading-relaxed mb-6">
+            <p className="text-xl text-gray-200 leading-relaxed mb-6">
               Help Us Build the September Show and Beyond.
             </p>
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-gray-200 mb-8">
               Your donation supports artists and production costs. Thank you!
             </p>
           </div>
@@ -259,11 +259,11 @@ export default function Home() {
       </section>
 
       {/* Section 3: About the Play */}
-      <section id="about" className="bg-white py-20">
+      <section id="about" className="theater-gray py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-8">ABOUT THE PLAY</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-8">ABOUT THE PLAY</h2>
           
-          <div className="prose prose-lg max-w-none text-gray-700">
+          <div className="prose prose-lg max-w-none text-gray-200">
             <p className="text-lg leading-relaxed">
               In this surreal drama-comedy, two Taiwanese-American brothers return to Taipei for Chinese New Year, carrying baggage both literal and emotional—including the ashes of a childhood cat. Set against political tension and ancestral ritual, <em>Not Our Home, Not Our Home</em> explores the costs of immigration, the ache of cultural dissonance, and the ghosts we carry across generations. Laced with dark humor, horror elements, and underscored by a lush original score, this play blurs the line between memory and myth, asking: What do we owe the places we leave behind—and the people we become?
             </p>
@@ -281,7 +281,7 @@ export default function Home() {
             <div className="mb-16">
               <h3 className="text-2xl font-bold text-white text-center mb-8">CAST</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Josh Lau" alt="Josh Lau headshot" />
                   </div>
@@ -292,7 +292,7 @@ export default function Home() {
                   </TruncatedBio>
                 </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Ding Lee" alt="Ding Lee headshot" />
                   </div>
@@ -303,7 +303,7 @@ export default function Home() {
                   </TruncatedBio>
                 </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="John Jiang" alt="John Jiang headshot" />
                   </div>
@@ -314,7 +314,7 @@ export default function Home() {
                   </TruncatedBio>
                 </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Dominic Wong" alt="Dominic Wong headshot" />
                   </div>
@@ -325,7 +325,7 @@ export default function Home() {
                   </TruncatedBio>
                 </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Lei Chow" alt="Lei Chow headshot" />
                   </div>
@@ -336,7 +336,7 @@ export default function Home() {
                   </TruncatedBio>
                 </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Tien-Li Wu" alt="Tien-Li Wu headshot" />
                   </div>
@@ -347,7 +347,7 @@ export default function Home() {
                   </TruncatedBio>
                 </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Boyu Chen" alt="Boyu Chen headshot" />
                   </div>
@@ -364,7 +364,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-bold text-white text-center mb-8">CREW</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Ned Du" alt="Ned Du photo" />
                   </div>
@@ -375,7 +375,7 @@ export default function Home() {
                   </TruncatedBio>
                 </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Sissi Chen" alt="Sissi Chen photo" />
                   </div>
@@ -386,7 +386,7 @@ export default function Home() {
                   </TruncatedBio>
                 </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Daphne Lin" alt="Daphne Lin photo" />
                   </div>
@@ -397,7 +397,7 @@ export default function Home() {
                   </TruncatedBio>
                 </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Yung-Hung Sung" alt="Yung-Hung Sung photo" />
                   </div>
@@ -408,7 +408,7 @@ export default function Home() {
                   </TruncatedBio>
                 </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Mamie Limbrick" alt="Mamie Limbrick photo" />
                   </div>
@@ -419,7 +419,7 @@ export default function Home() {
                   </TruncatedBio>
                 </div>
 
-                <div className="text-center bg-white/10 rounded-lg p-6">
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Qingan Zhang" alt="Qingan Zhang photo" />
                   </div>
@@ -514,11 +514,11 @@ export default function Home() {
       {/* Section 6: Playwright's Note */}
       <section id="playwright" className="section-height theater-beige py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-8">PLAYWRIGHT'S NOTE</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-8">PLAYWRIGHT'S NOTE</h2>
           
-          <div className="prose prose-lg max-w-none text-gray-700 space-y-6 text-center">
-            <div className="bg-white/50 p-8 rounded-lg">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">A Message from the Writer:</h3>
+          <div className="prose prose-lg max-w-none text-gray-200 space-y-6 text-center">
+            <div className="bg-black/30 p-8 rounded-lg border border-red-900/30">
+              <h3 className="text-xl font-bold mb-4 text-white">A Message from the Writer:</h3>
               <div className="text-base leading-relaxed space-y-4">
                 <p>
                   This play began with a dream: laughing red faces, a belly sloshing with Moutai, and—most stubbornly—the slow, annoying burn of guilt. From that strange dream bloomed <em>Not Our Home, Not Our Home</em>, a song of many notes: of immigration and memory, of brothers and borders, of languages spoken and unspoken.
