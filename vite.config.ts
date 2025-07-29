@@ -5,7 +5,7 @@ import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
   // Add base URL for GitHub Pages deployment
-  base: process.env.NODE_ENV === 'production' ? '/not-our-home/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/play-info/' : '/',
   plugins: [
     react(),
     runtimeErrorOverlay(),
