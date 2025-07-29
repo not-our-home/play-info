@@ -552,7 +552,7 @@ export default function Home() {
       <footer className="bg-black py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="text-white space-y-4">
-            <p className="text-lg">Contact: <a href="mailto:rexlee22786@gmail.com" className="text-white underline hover:text-white/80 transition-colors">rexlee22786@gmail.com</a></p>
+            <p className="text-lg">Contact: <a href="mailto:notourhome.info@gmail.com" className="text-white underline hover:text-white/80 transition-colors">notourhome.info@gmail.com</a></p>
             <div className="pt-4 border-t border-white/20">
               <p className="text-white/60 text-sm">
                 © 2025 <em>NOT OUR HOME, NOT OUR HOME</em> • A play by Ned Du
