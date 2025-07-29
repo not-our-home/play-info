@@ -35,49 +35,20 @@ export default function Home() {
   // Gallery state
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
-  // List of all rehearsal photos
+  // List of all rehearsal photos (updated to match current folder)
   const galleryImages = [
     'IMG_3362.jpg',
-    'fxn 2025-07-21 150441.244.jpg',
     'fxn 2025-07-21 150528.947.jpg',
     'fxn 2025-07-21 133702.815.jpg',
-    'fxn 2025-07-21 133559.825.jpg',
-    'fxn 2025-07-21 133853.229.jpg',
     'fxn 2025-07-21 133215.030.jpg',
-    'fxn 2025-07-21 134138.264.jpg',
-    'fxn 2025-07-05 195505.142.jpg',
     'fxn 2025-07-05 195445.262.jpg',
     'fxn 2025-07-18 165713.890.jpg',
-    'fxn 2025-07-18 165945.824.jpg',
     'fxn 2025-07-09 142044.190.jpg',
     'fxn 2025-07-13 164236.529.jpg',
     'fxn 2025-07-15 144019.316.jpg',
-    'fxn 2025-07-09 142105.895.jpg',
     'fxn 2025-07-13 163108.077.jpg',
-    'fxn 2025-07-11 190934.422.jpg',
-    'fxn 2025-07-11 190531.293.jpg',
-    'fxn 2025-07-09 142132.851.jpg',
     'fxn 2025-07-14 151754.693.jpg',
-    'fxn 2025-07-11 185920.791.jpg',
-    'fxn 2025-07-12 175424.524.jpg',
-    'fxn 2025-07-15 162332.126.jpg',
-    'fxn 2025-07-11 201935.628.jpg',
-    'fxn 2025-07-12 175402.185.jpg',
-    'fxn 2025-07-09 142736.632.jpg',
-    'fxn 2025-07-09 142755.819.jpg',
-    'fxn 2025-07-09 142157.687.jpg',
-    'fxn 2025-07-11 202528.864.jpg',
-    'fxn 2025-07-11 190237.387.jpg',
-    'fxn 2025-07-11 190347.694.jpg',
-    'fxn 2025-07-11 190549.081.jpg',
-    'meggiehoolphoto-redthreads-01.jpg',
-    'meggiehoolphoto-redthreads-05.jpg',
-    'meggiehoolphoto-redthreads-10.jpg',
-    'meggiehoolphoto-redthreads-143.jpg',
-    'meggiehoolphoto-redthreads-20.jpg',
-    'meggiehoolphoto-redthreads-45.jpg',
-    'meggiehoolphoto-redthreads-59.jpg',
-    'meggiehoolphoto-redthreads-79.jpg'
+    'fxn 2025-07-11 202528.864.jpg'
   ];
 
   const nextImage = () => {
