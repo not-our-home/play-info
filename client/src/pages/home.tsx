@@ -235,12 +235,22 @@ export default function Home() {
             </p>
           </div>
           
-          <Button 
-            onClick={() => window.open('#', '_blank')}
-            className="bg-red-600 text-white px-12 py-4 rounded-lg text-xl font-bold hover:bg-red-700 transition-colors shadow-lg"
-          >
-            DONATE NOW
-          </Button>
+          <form action="https://www.paypal.com/donate" method="post" target="_top" className="inline-block">
+            <input type="hidden" name="business" value="SZDKK426EJGCA" />
+            <input type="hidden" name="no_recurring" value="0" />
+            <input type="hidden" name="item_name" value="For our September show and beyond. The cast and crew of Not Our Home, Not Our Home thanks you! " />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input 
+              type="image" 
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" 
+              name="submit" 
+              title="PayPal - The safer, easier way to pay online!" 
+              alt="Donate with PayPal button"
+              className="hover:opacity-80 transition-opacity"
+              style={{ border: 0 }}
+            />
+            <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" style={{ border: 0 }} />
+          </form>
         </div>
       </section>
 
@@ -423,7 +433,6 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-white mb-8">Special thanks to</h3>
               <div className="max-w-2xl mx-auto text-white/80 space-y-2">
                 <p className="text-lg">Emily Her - POSTER DESIGNER</p>
-                <p className="text-lg">Meggie Hool - PHOTOGRAPHER</p>
                 <p className="text-lg">Nikhil Haksar - STAND-IN</p>
               </div>
             </div>
