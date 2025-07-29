@@ -246,8 +246,12 @@ export default function Home() {
               name="submit" 
               title="PayPal - The safer, easier way to pay online!" 
               alt="Donate with PayPal button"
-              className="hover:opacity-80 transition-opacity"
-              style={{ border: 0 }}
+              className="hover:opacity-80 transition-all duration-300 hover:scale-110"
+              style={{ 
+                border: 0, 
+                transform: 'scale(3.5)',
+                margin: '60px 0'
+              }}
             />
             <img alt="" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" style={{ border: 0 }} />
           </form>
