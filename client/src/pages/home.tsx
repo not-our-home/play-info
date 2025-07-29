@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Component to handle truncated bios with expand/collapse functionality
@@ -33,25 +33,8 @@ export default function Home() {
   const posterImageSrc = basePath + 'POSTER_1753552322790.jpg';
 
   // Gallery state
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  // Preload the poster image for faster loading
-  useEffect(() => {
-    const preloadLink = document.createElement('link');
-    preloadLink.rel = 'preload';
-    preloadLink.as = 'image';
-    preloadLink.href = posterImageSrc;
-    preloadLink.fetchPriority = 'high';
-    document.head.appendChild(preloadLink);
-
-    return () => {
-      // Cleanup on unmount
-      if (document.head.contains(preloadLink)) {
-        document.head.removeChild(preloadLink);
-      }
-    };
-  }, [posterImageSrc]);
-
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
   // List of all rehearsal photos (updated to match current folder)
   const galleryImages = [
     'IMG_3362.jpg',
@@ -99,26 +82,15 @@ export default function Home() {
 
   // Component to render headshot or placeholder
   const HeadshotImage = ({ name, alt }: { name: string; alt: string }) => {
-    const [imageLoaded, setImageLoaded] = useState(false);
     const headshotPath = getHeadshotPath(name);
     
     if (headshotPath) {
       return (
-        <div className="w-full h-full relative">
-          {!imageLoaded && (
-            <div className="w-full h-full bg-white/10 animate-pulse flex items-center justify-center absolute inset-0">
-              <div className="w-8 h-8 border-2 border-white/30 border-t-white/70 rounded-full animate-spin"></div>
-            </div>
-          )}
-          <img 
-            src={headshotPath}
-            alt={alt}
-            className={`w-full h-full object-contain transition-opacity duration-300 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-            loading="lazy"
-            decoding="async"
-            onLoad={() => setImageLoaded(true)}
-          />
-        </div>
+        <img 
+          src={headshotPath}
+          alt={alt}
+          className="w-full h-full object-contain"
+        />
       );
     } else {
       return (
@@ -191,9 +163,6 @@ export default function Home() {
             src={posterImageSrc} 
             alt="Not Our Home, Not Our Home - Theater Poster"
             className="w-[600px] h-[850px] object-contain rounded-lg shadow-2xl max-w-full max-h-full"
-            loading="eager"
-            fetchPriority="high"
-            decoding="sync"
           />
         </div>
 
@@ -477,8 +446,6 @@ export default function Home() {
                   src={basePath + galleryImages[currentImageIndex]}
                   alt={`Rehearsal photo ${currentImageIndex + 1}`}
                   className="w-full h-full object-contain"
-                  loading="lazy"
-                  decoding="async"
                 />
                 
                 {/* Navigation Arrows */}
@@ -523,8 +490,6 @@ export default function Home() {
                         src={basePath + image}
                         alt={`Thumbnail ${index + 1}`}
                         className="w-full h-full object-contain"
-                        loading="lazy"
-                        decoding="async"
                       />
                     </button>
                   ))}
