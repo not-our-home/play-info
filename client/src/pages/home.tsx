@@ -118,7 +118,7 @@ export default function Home() {
         <img 
           src={headshotPath}
           alt={alt}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       );
     } else {
@@ -282,7 +282,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-white text-center mb-8">CAST</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Josh Lau" alt="Josh Lau headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Josh Lau</h4>
@@ -293,7 +293,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Ding Lee" alt="Ding Lee headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Ding Lee</h4>
@@ -304,7 +304,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="John Jiang" alt="John Jiang headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">John Jiang</h4>
@@ -315,7 +315,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Dominic Wong" alt="Dominic Wong headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Dominic Wong</h4>
@@ -326,7 +326,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Lei Chow" alt="Lei Chow headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Lei Chow</h4>
@@ -337,7 +337,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Tien-Li Wu" alt="Tien-Li Wu headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Tien-Li Wu</h4>
@@ -348,7 +348,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Boyu Chen" alt="Boyu Chen headshot" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Boyu Chen</h4>
@@ -365,7 +365,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-white text-center mb-8">CREW</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Ned Du" alt="Ned Du photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Ned Du</h4>
@@ -376,7 +376,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Sissi Chen" alt="Sissi Chen photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Sissi Chen</h4>
@@ -387,7 +387,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Daphne Lin" alt="Daphne Lin photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Daphne Lin</h4>
@@ -398,7 +398,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Yung-Hung Sung" alt="Yung-Hung Sung photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Yung-Hung Sung</h4>
@@ -409,7 +409,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Mamie Limbrick" alt="Mamie Limbrick photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Mamie Limbrick</h4>
@@ -420,7 +420,7 @@ export default function Home() {
                 </div>
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
-                  <div className="w-32 h-32 rounded-lg mb-4 mx-auto overflow-hidden">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
                     <HeadshotImage name="Qingan Zhang" alt="Qingan Zhang photo" />
                   </div>
                   <h4 className="text-white font-bold text-lg mb-1">Qingan Zhang</h4>
@@ -456,7 +456,7 @@ export default function Home() {
                 <img
                   src={basePath + galleryImages[currentImageIndex]}
                   alt={`Rehearsal photo ${currentImageIndex + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
                 
                 {/* Navigation Arrows */}
@@ -500,7 +500,7 @@ export default function Home() {
                       <img
                         src={basePath + image}
                         alt={`Thumbnail ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                     </button>
                   ))}
