@@ -90,6 +90,7 @@ export default function Home() {
           src={headshotPath}
           alt={alt}
           className="w-full h-full object-contain"
+          loading="lazy"
         />
       );
     } else {
@@ -163,6 +164,8 @@ export default function Home() {
             src={posterImageSrc} 
             alt="Not Our Home, Not Our Home - Theater Poster"
             className="w-[600px] h-[850px] object-contain rounded-lg shadow-2xl max-w-full max-h-full"
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
 
@@ -446,6 +449,7 @@ export default function Home() {
                   src={basePath + galleryImages[currentImageIndex]}
                   alt={`Rehearsal photo ${currentImageIndex + 1}`}
                   className="w-full h-full object-contain"
+                  loading="lazy"
                 />
                 
                 {/* Navigation Arrows */}
@@ -490,6 +494,7 @@ export default function Home() {
                         src={basePath + image}
                         alt={`Thumbnail ${index + 1}`}
                         className="w-full h-full object-contain"
+                        loading="lazy"
                       />
                     </button>
                   ))}
