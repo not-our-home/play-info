@@ -431,6 +431,7 @@ export default function Home() {
               <div className="max-w-2xl mx-auto text-white/80 space-y-2">
                 <p className="text-lg">Emily Her - POSTER DESIGNER</p>
                 <p className="text-lg">Nikhil Haksar - STAND-IN</p>
+                <p className="text-lg">Riley Fay - Hyōshigi</p>
               </div>
             </div>
           </div>
