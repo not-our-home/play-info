@@ -174,6 +174,7 @@ export default function Home() {
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight italic">
                 NOT OUR HOME, NOT OUR HOME
               </h1>
+          <p className="text-lg sm:text-xl text-white/90 mb-2 font-medium">A REX! Production</p>
           <p className="text-lg sm:text-xl text-white/90 mb-4 font-medium">A new play by Ned Du</p>
           
           <div className="text-white/80 mb-8 max-w-2xl space-y-3">
