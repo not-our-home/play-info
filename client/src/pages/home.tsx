@@ -65,7 +65,7 @@ export default function Home() {
       'Josh Lau': 'Josh Lau.jpg',
       'Ding Lee': 'Ding J_s Headshot.jpg',
       'John Jiang': 'John Jiang.jpg',
-      'DiDi Wong': 'Didi Wong Headshot.jpg',
+      'DiDi Wong': 'DidiWong.jpg',
       'Lei Chow': 'Lei Chow.jpg',
       'Tien-Li Wu': 'Tien-Li Wu.jpg',
       'Boyu Chen': 'Boyu Chen.jpg',
