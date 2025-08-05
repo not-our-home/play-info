@@ -65,7 +65,7 @@ export default function Home() {
       'Josh Lau': 'Josh Lau.jpg',
       'Ding Lee': 'Ding J_s Headshot.jpg',
       'John Jiang': 'John Jiang.jpg',
-      'Dominic Wong': 'Dominic Wong - Headshot 20250512.jpg',
+      'DiDi Wong': 'Didi Wong Headshot.jpg',
       'Lei Chow': 'Lei Chow.jpg',
       'Tien-Li Wu': 'Tien-Li Wu.jpg',
       'Boyu Chen': 'Boyu Chen.jpg',
@@ -308,12 +308,12 @@ export default function Home() {
 
                 <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
                   <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
-                    <HeadshotImage name="Dominic Wong" alt="Dominic Wong headshot" />
+                    <HeadshotImage name="DiDi Wong" alt="DiDi Wong headshot" />
                   </div>
-                  <h4 className="text-white font-bold text-lg mb-1">Dominic Wong</h4>
+                  <h4 className="text-white font-bold text-lg mb-1">DiDi Wong</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – UNCLE</p>
                   <TruncatedBio>
-                    Bio coming soon
+                    DiDi is a NYC based actor and singer. He has acted in more than 30 plus short films and several off off Broadway Plays.
                   </TruncatedBio>
                 </div>
 
@@ -346,7 +346,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">Boyu Chen</h4>
                   <p className="text-white/80 text-sm mb-3">Actor – COUSIN / MASKED MAN / FLIGHT ATTENDANT / PASSPORT OFFICER / RADIO</p>
                   <TruncatedBio>
-                    Bio coming soon
+                    Boyu Chen is an actor from China, based in New York. While a student in China he appeared at the prestigious Wuxi Grand Theater, where he played Lysander in Midsummer Night's Dream and Avery from The Flick by Annie Baker. He is a recent graduate of the Stella Adler Studio of Acting. While at Adler, he most notably played M. Butterfly by David Henry Hwang.
                   </TruncatedBio>
                 </div>
               </div>
