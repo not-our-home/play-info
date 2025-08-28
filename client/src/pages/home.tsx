@@ -30,7 +30,7 @@ function TruncatedBio({ children }: { children: string }) {
 export default function Home() {
   // Get the base path from Vite's configuration
   const basePath = import.meta.env.BASE_URL;
-  const posterImageSrc = basePath + 'POSTER_1753552322790.jpg';
+  const posterImageSrc = basePath + 'UpdatedPoster.jpg';
 
   // Gallery state
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -178,18 +178,17 @@ export default function Home() {
           <p className="text-lg sm:text-xl text-white/90 mb-4 font-medium">A new play by Ned Du</p>
           
           <div className="text-white/80 mb-8 max-w-2xl space-y-3">
-            <p className="text-base sm:text-lg"><strong>Preview performance:</strong> August 9, 7:30 PM @ The Flea Theater</p>
-            <p className="text-sm sm:text-base">(Presented by Rogue Theater Festival 2025)</p>
+            <p className="text-base sm:text-lg"><strong>Main performance week:</strong> September 22–28 @ The Theater for the New City</p>
             <p className="text-sm sm:text-base">
-              <a href="https://www.tickettailor.com/events/roguetheaterfestival/1733301" 
+              <a href="https://www.eventbrite.co.uk/e/not-our-home-not-our-home-tickets-1626974758299?aff=oddtdtcreator" 
                  target="_blank" 
                  rel="noopener noreferrer"
                  className="text-white underline hover:text-white/80 transition-colors">
                 Get tickets here
               </a>
             </p>
-            <p className="text-base sm:text-lg"><strong>Main performance week:</strong> September 22–28 @ The Theater for the New City</p>
-            <p className="text-sm sm:text-base">(Full schedule & ticket info coming soon)</p>
+            <p className="text-base sm:text-lg"><strong>Preview performance:</strong> August 9, 7:30 PM @ The Flea Theater</p>
+            <p className="text-sm sm:text-base">(Presented by Rogue Theater Festival 2025)</p>
           </div>
         </div>
 
