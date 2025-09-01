@@ -480,11 +480,6 @@ export default function Home() {
                 <p className="text-lg">Emily Her - POSTER DESIGNER</p>
                 <p className="text-lg">Nikhil Haksar - STAND-IN</p>
               </div>
-              
-              {/* Photography Credit - Separate section */}
-              <div className="max-w-2xl mx-auto text-white/80 mt-8">
-                <p className="text-lg">Meggie Hool Photography - PRODUCTION PHOTOS</p>
-              </div>
             </div>
           </div>
         </div>
@@ -553,6 +548,13 @@ export default function Home() {
                     </button>
                   ))}
                 </div>
+              </div>
+              
+              {/* Photography Credit */}
+              <div className="text-center mt-8">
+                <p className="text-white/60 text-sm">
+                  Production photos by <span className="text-white font-medium">Meggie Hool Photography</span>
+                </p>
               </div>
             </div>
           </div>
