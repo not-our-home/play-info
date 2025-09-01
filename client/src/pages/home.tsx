@@ -48,7 +48,14 @@ export default function Home() {
     'fxn 2025-07-15 144019.316.jpg',
     'fxn 2025-07-13 163108.077.jpg',
     'fxn 2025-07-14 151754.693.jpg',
-    'fxn 2025-07-11 202528.864.jpg'
+    'fxn 2025-07-11 202528.864.jpg',
+    'meggiehoolphoto-22.jpg',
+    'meggiehoolphoto-28.jpg',
+    'meggiehoolphoto-34.jpg',
+    'meggiehoolphoto-41.jpg',
+    'meggiehoolphoto-51.jpg',
+    'meggiehoolphoto-76.jpg',
+    'meggiehoolphoto-79.jpg'
   ];
 
   const nextImage = () => {
@@ -75,6 +82,8 @@ export default function Home() {
       'Yung-Hung Sung': 'Yung-Hung Sung.jpg',
       'Mamie Limbrick': 'Mamie Limbrick.jpg',
       'Qingan Zhang': 'QinganZhang.jpg',
+      'Jefferson Lind': 'Jefferson Lind .jpg',
+      'Riley Fay': 'riley fay .jpg',
     };
     
     return headshotMap[name] ? basePath + headshotMap[name] : null;
@@ -166,6 +175,7 @@ export default function Home() {
             className="w-[600px] h-[850px] object-contain rounded-lg shadow-2xl max-w-full max-h-full"
             loading="eager"
             fetchPriority="high"
+            decoding="async"
           />
         </div>
 
@@ -259,6 +269,23 @@ export default function Home() {
             <p className="text-lg leading-relaxed">
               In this surreal drama-comedy, two Taiwanese-American brothers return to Taipei for Chinese New Year, carrying baggage both literal and emotional—including the ashes of a childhood cat. Set against political tension and ancestral ritual, <em>Not Our Home, Not Our Home</em> explores the costs of immigration, the ache of cultural dissonance, and the ghosts we carry across generations. Laced with dark humor, horror elements, and underscored by a lush original score, this play blurs the line between memory and myth, asking: What do we owe the places we leave behind—and the people we become?
             </p>
+          </div>
+          
+          {/* Trailer Video */}
+          <div className="mt-12 text-center">
+            <h3 className="text-2xl font-bold text-white mb-6">WATCH THE TRAILER</h3>
+            <div className="max-w-3xl mx-auto">
+              <div className="relative w-full" style={{paddingBottom: '56.25%'}}>
+                <iframe 
+                  className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  src="https://www.youtube.com/embed/9kHXHenOvOU"
+                  title="Not Our Home, Not Our Home - Trailer"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -385,7 +412,7 @@ export default function Home() {
                   <h4 className="text-white font-bold text-lg mb-1">Daphne Lin</h4>
                   <p className="text-white/80 text-sm mb-3">STAGE MANAGER</p>
                   <TruncatedBio>
-                    Bio coming soon
+                    Daphne Lin is a performing arts professional and current M.A. candidate in Performing Arts Administration at NYU Steinhardt. Originally from Pingtung, Taiwan, she holds a B.F.A. in Music Composition and Production from National Sun Yat-sen University and has extensive experience in music producing, sound design, and vocal coaching. Her recent stage management credit is Then We Start to Fly at NYU Tisch. She is excited to help bring this powerful story to life on stage.
                   </TruncatedBio>
                 </div>
 
@@ -421,6 +448,28 @@ export default function Home() {
                     Qingan Zhang (She/Her) is a New York and Boston based scenic designer. Her work explores metaphorical narratives through bodily performance, physical materiality, and integrated spatial experience. Selected design credits include Galileo's Daughter (WAM Theatre), Nüwa in Fairyland (CHUANG Stage), The Chinese Lady (Central Square Theater), Wolf Play (Brandeis University). Associate credits include Franklin's Key (Pig Iron), Cymbeline (NAATCO), SUR (LA MAMA). Qingan's co-devising puppetry pieces have been showcased at New Ohio Theatre Ice Factory, Rattlestick Theater GFTF, and HERE Arts Center. Qingan is the co-founder of the non-profit interdisciplinary production company Cellunova Productions.
                   </TruncatedBio>
                 </div>
+
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <HeadshotImage name="Jefferson Lind" alt="Jefferson Lind photo" />
+                  </div>
+                  <h4 className="text-white font-bold text-lg mb-1">Jefferson Lind</h4>
+                  <p className="text-white/80 text-sm mb-3">HYŌSHIGI</p>
+                  <TruncatedBio>
+                    Jefferson Lind is a playwright, improviser, comedy club staff member, and occasional temp office job worker from Austin, Texas. Recent credits include Max in Sayali Gove's original musical Reality Check, co-directing and writing the book & lyrics for Strings Attached at the University of Chicago, and attending several weddings. He's very glad to be helping out with this show.
+                  </TruncatedBio>
+                </div>
+
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <HeadshotImage name="Riley Fay" alt="Riley Fay photo" />
+                  </div>
+                  <h4 className="text-white font-bold text-lg mb-1">Riley Fay</h4>
+                  <p className="text-white/80 text-sm mb-3">SOUND OPERATOR</p>
+                  <TruncatedBio>
+                    Riley Fay is originally from Houston, Texas, Baby! They made their way to NYC a few years ago to attend The American Academy of Dramatic Arts. Riley has done many roles in recent years, from Bardolph in Heny V, to #46 in The Wolves, and even Yelena from Uncle Vanya. Riley thrives on having fun and telling stories! They're ecstatic to be a part of this project and grateful for the opportunity! You can find more from Riley on Insta: @fay.on.display
+                  </TruncatedBio>
+                </div>
               </div>
             </div>
 
@@ -430,7 +479,11 @@ export default function Home() {
               <div className="max-w-2xl mx-auto text-white/80 space-y-2">
                 <p className="text-lg">Emily Her - POSTER DESIGNER</p>
                 <p className="text-lg">Nikhil Haksar - STAND-IN</p>
-                <p className="text-lg">Riley Fay - Hyōshigi</p>
+              </div>
+              
+              {/* Photography Credit - Separate section */}
+              <div className="max-w-2xl mx-auto text-white/80 mt-8">
+                <p className="text-lg">Meggie Hool Photography - PRODUCTION PHOTOS</p>
               </div>
             </div>
           </div>
