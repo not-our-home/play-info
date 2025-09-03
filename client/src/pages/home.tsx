@@ -82,7 +82,7 @@ export default function Home() {
       'Yung-Hung Sung': 'Yung-Hung Sung.jpg',
       'Mamie Limbrick': 'Mamie Limbrick.jpg',
       'Qingan Zhang': 'QinganZhang.jpg',
-      'Jefferson Lind': 'Jefferson Lind .jpg',
+      'Jefferson Lind': 'jeff.jpg',
       'Riley Fay': 'riley fay .jpg',
     };
     
