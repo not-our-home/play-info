@@ -82,8 +82,11 @@ export default function Home() {
       'Yung-Hung Sung': 'Yung-Hung Sung.jpg',
       'Mamie Limbrick': 'Mamie Limbrick.jpg',
       'Qingan Zhang': 'QinganZhang.jpg',
-      'Jefferson Lind': 'jeff.jpeg',
+      'Jefferson Lind': 'Jefferson Lind .jpg',
       'Riley Fay': 'riley fay .jpg',
+      'Audrey J. Shon': 'Audrey headshot.jpg',
+      'Yingshi (CC) Huang': 'Yingshi headshot.jpg',
+      'Ankit Pandey': 'ANKIT PANDEY headshot.jpeg',
     };
     
     return headshotMap[name] ? basePath + headshotMap[name] : null;
@@ -468,6 +471,39 @@ export default function Home() {
                   <p className="text-white/80 text-sm mb-3">SOUND OPERATOR</p>
                   <TruncatedBio>
                     Riley Fay is originally from Houston, Texas, Baby! They made their way to NYC a few years ago to attend The American Academy of Dramatic Arts. Riley has done many roles in recent years, from Bardolph in Heny V, to #46 in The Wolves, and even Yelena from Uncle Vanya. Riley thrives on having fun and telling stories! They're ecstatic to be a part of this project and grateful for the opportunity! You can find more from Riley on Insta: @fay.on.display
+                  </TruncatedBio>
+                </div>
+
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <HeadshotImage name="Audrey J. Shon" alt="Audrey J. Shon photo" />
+                  </div>
+                  <h4 className="text-white font-bold text-lg mb-1">Audrey J. Shon</h4>
+                  <p className="text-white/80 text-sm mb-3">ASSISTANT STAGE MANAGER</p>
+                  <TruncatedBio>
+                    Audrey J. Shon is excited to return to Theater for The New City after the wonderful Summer Street Theater tour closed earlier this month. She is in her final year of pursuing a master's degree at NYU Steinhardt and is also working on the upcoming Village Halloween Costume Ball at TNC. Past credits include: The Shine Challenge (TNC), Apt.8E (La MaMa), and A Midsummer Night's Dream (National Museum of Taiwan Literature).
+                  </TruncatedBio>
+                </div>
+
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <HeadshotImage name="Yingshi (CC) Huang" alt="Yingshi (CC) Huang photo" />
+                  </div>
+                  <h4 className="text-white font-bold text-lg mb-1">Yingshi (CC) Huang</h4>
+                  <p className="text-white/80 text-sm mb-3">PRODUCTION MANAGER</p>
+                  <TruncatedBio>
+                    Yingshi (CC) Huang is a theatre producer and arts manager based in New York City. She earned her Master's degree in Performing Arts Administration from New York University and has worked across general management, production, and marketing on projects in both Shanghai and New York. Her producing credits span Yue Opera New Dragon Gate Inn, musicals Apollonia, Santa Lucia, Superstar, DRAG: The Musical, and Chunxiang, as well as plays Crazy Talk and The Resurrection of Death. CC believes theatre is a space where stories connect people across cultures, and she is excited to bring Not Our Home, Not Our Home to the stage with this team.
+                  </TruncatedBio>
+                </div>
+
+                <div className="text-center bg-black/20 border border-red-900/20 rounded-lg p-6">
+                  <div className="w-48 h-48 rounded-lg mb-4 mx-auto overflow-hidden">
+                    <HeadshotImage name="Ankit Pandey" alt="Ankit Pandey photo" />
+                  </div>
+                  <h4 className="text-white font-bold text-lg mb-1">Ankit Pandey</h4>
+                  <p className="text-white/80 text-sm mb-3">LIGHTING DESIGNER</p>
+                  <TruncatedBio>
+                    Ankit Pandey is a lighting designer, theatre practitioner and educator. Having been recently graduated from Yale with Masters in Lighting Design, Ankit has worked in and designed for a wide gamut of performances including but not limited to theatre, music, dance recitals, films, exhibitions and installations. Notable among these are Eden, Fucking A, The Winter's Tale, Dastaan LIVE and Table Radica. They are also a co-founder of Tech Quartet - A technical design and production company based in New Delhi.
                   </TruncatedBio>
                 </div>
               </div>
